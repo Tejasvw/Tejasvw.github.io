@@ -1,12 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tejas Warukar</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    hello world
-    dbvjdhv
+    <header id="header">
+
+        <div class="container">
+
+            <nav>
+                <div id="logo">
+                    <h1>TEJAS</h1>
+                    <span style="color: #E9724C;">
+                        <h1>&nbsp;W.</h1>
+                    </span>
+                </div>
+                <ul>
+                    <li style="--bg-color: #E9724C;">
+                        <span class="icon"><i class="ph-house"><img src="assets/home.png" alt=""
+                                    class="nav_icon"></i></span>
+                        <a class="text" href="#"> Home</a>
+                    </li>
+                    <li style="--bg-color: #E9724C;">
+                        <span class="icon"><i class="ph-cards"><img src="assets/about.png" alt=""
+                                    class="nav_icon"></i></span>
+                        <a class="text" href="#">About</a>
+
+                    <li style="--bg-color: #E9724C;">
+                        <span class="icon"><i class="ph-cards"><img src="assets/services.png" alt=""
+                                    class="nav_icon"></i></span>
+                        <a class="text" href="#">Services</a>
+
+
+                    </li>
+                    <li style="--bg-color: #E9724C;">
+                        <span class="icon"><i class="ph-pencil-simple"><img src="assets/portfolio.png" alt=""
+                                    class="nav_icon"></i></span>
+                        <a class="text" href="#">Portfolio</a>
+
+                    </li>
+                    <li style="--bg-color: #E9724C;">
+                        <span class="icon"><i class="ph-phone"><img src="assets/contact.png" alt=""
+                                    class="nav_icon"></i></span>
+                        <a class="text" href="#">Contact</a>
+
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+
+        <div class="header_text">
+            <h3>Hi,</h3>
+            <h1>My name is <span>Tejas</span>,</h1>
+            <div style="display: flex;">
+                <p class="text first_text">I'm a&nbsp;</p>
+                <p class="text sec_text">MERNSTACK Developer.</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </header>
+
+    <div id="about">
+        <div class="container1">
+
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="assets/profile_2.jpg" alt="">
+
+                </div>
+                <div class="about_col_2">
+                    <h1 class="subtitle">About me</h1>
+                    <h3 class="sub_heading">Developer & <span>Designer</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolore alias nesciunt
+                        assumenda placeat quis debitis, cum vero deleniti quia voluptas nisi, dignissimos tenetur rerum
+                        tempora minus quaerat, harum architecto?Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ducimus cumque ab incidunt architecto. Voluptas maxime ipsa fugit dolorem aliquid ullam
+                        dolorum, porro quaerat? Accusamus quas praesentium aliquam omnis amet possimus?Lorem, ipsum
+                        dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit eos consectetur quia
+                        tempore harum necessitatibus. Blanditiis accusamus dolorum, aliquam eveniet quos officiis in!
+                        Labore enim atque quasi veritatis at!</p>
+
+                    <div class="contact_links">
+
+                        <a  target="_blank" href="https://drive.google.com/file/d/1cbcKGj12SFuqfBh73nxWjMmXISKkAN27/view?usp=sharing"
+                            class="download_btn contact_btn"><span>Download CV</span> <img class="cv_icon_color"
+                                src="assets/cv_color.png" alt=""><img class="cv_icon_white" src="assets/cv_white.png"
+                                alt=""></a>
+
+
+                        <a class="contact_btn talk" href=""> Let's Talk !!</a>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="about_stuff">
+
+        <div class="about_links">
+
+            <p class="about_btns active_btn" onclick="opentab('skills')">SKills</p>
+            <p class="about_btns" onclick="opentab('Experience')">Experience</p>
+            <p class="about_btns" onclick="opentab('education')">Education</p>
+            
+        </div>
+
+        <div class="about_contents active_tab" id="skills" >
+            <div class="container2">
+                <div class="card" >
+                    <div class="img-box">
+                        <img
+                            src="assets/Mern.png">
+    
+                    </div>
+                    <div class="content">
+                        <h2>MERN</h2>
+                        <p>
+                            MONGO-DB | EXPRESS JS | REACT JS | NODE JS.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #FF3E7F">
+                    <div class="img-box">
+                        <img
+                            src="assets/web.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>WEB</h2>
+                        <p>
+                           HTML <br>CSS <br> JS
+                        </li>
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div class="img-box">
+                        <img
+                            src="assets/uiux.png">
+                    </div>
+                    <div class="content">
+                        <h2>UI-UX</h2>
+                        <p style="font-size: 25px;">
+                            Designing Web/app <br>interfaces
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div class="img-box">
+                        <img 
+                            src="assets/python.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Python</h2>
+                        <p style="font-size: 25px;" >
+                           Programming Languange
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div style="background-size: cover;" class="img-box">
+                        <img  
+                            src="assets/django.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Django</h2>
+                        <p style="font-size: 25px;" >
+                           Python <br> Backend Framework
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="about_contents" id="experience">
+            <div class="container2">
+                <div class="card" >
+                    <div class="img-box">
+                        <img
+                            src="assets/Mern.png">
+    
+                    </div>
+                    <div class="content">
+                        <h2> Experience1</h2>
+                        <p>
+                            MONGO-DB | EXPRESS JS | REACT JS | NODE JS.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #FF3E7F">
+                    <div class="img-box">
+                        <img
+                            src="assets/web.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Experience2</h2>
+                        <p>
+                           HTML <br>CSS <br> JS
+                        </li>
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div class="img-box">
+                        <img
+                            src="assets/uiux.png">
+                    </div>
+                    <div class="content">
+                        <h2>Experience3</h2>
+                        <p style="font-size: 25px;">
+                            Designing Web/app <br>interfaces
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div class="img-box">
+                        <img 
+                            src="assets/python.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Experience4</h2>
+                        <p style="font-size: 25px;" >
+                           Programming Languange
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div style="background-size: cover;" class="img-box">
+                        <img  
+                            src="assets/django.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Experience5</h2>
+                        <p style="font-size: 25px;" >
+                           Python <br> Backend Framework
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="about_contents"  id="education">
+            <div class="container2">
+                <div class="card" >
+                    <div class="img-box">
+                        <img
+                            src="assets/Mern.png">
+    
+                    </div>
+                    <div class="content">
+                        <h2>Diploma</h2>
+                        <p>
+                            Shri Datta Meghe Polytechninc,<br>Nagpur.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #FF3E7F">
+                    <div class="img-box">
+                        <img
+                            src="assets/web.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Bacholers</h2>
+                        <p>
+                           S.B Jain Institute of Technolgy Management and Research
+                        </li>
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div class="img-box">
+                        <img
+                            src="assets/uiux.png">
+                    </div>
+                    <div class="content">
+                        <h2>Python Developement</h2>
+                        <p style="font-size: 25px;">
+                            SSIT pvt. ltd, Nagpur
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div style="background-size: cover;" class="img-box">
+                        <img  
+                            src="assets/django.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Web Developement</h2>
+                        <p style="font-size: 25px;" >
+                           SSIT pvt. ltd, Nagpur.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div class="img-box">
+                        <img 
+                            src="assets/python.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>MERN
+                        </h2>
+                        <p style="font-size: 25px;" >
+                           Binar Code Technologies, Nagpur.
+                        </p>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+
+
+        
+    </div>
+
+
+
+
+
+
+
+
 </body>
+
 </html>
