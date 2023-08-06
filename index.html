@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Tejas Warukar</title>
+
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css'> -->
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -66,7 +69,6 @@
             </div>
         </div>
 
-        <script src="script.js"></script>
     </header>
 
     <div id="about">
@@ -80,18 +82,23 @@
                 <div class="about_col_2">
                     <h1 class="subtitle">About me</h1>
                     <h3 class="sub_heading">Developer & <span>Designer</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolore alias nesciunt
-                        assumenda placeat quis debitis, cum vero deleniti quia voluptas nisi, dignissimos tenetur rerum
-                        tempora minus quaerat, harum architecto?Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Ducimus cumque ab incidunt architecto. Voluptas maxime ipsa fugit dolorem aliquid ullam
-                        dolorum, porro quaerat? Accusamus quas praesentium aliquam omnis amet possimus?Lorem, ipsum
-                        dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit eos consectetur quia
-                        tempore harum necessitatibus. Blanditiis accusamus dolorum, aliquam eveniet quos officiis in!
-                        Labore enim atque quasi veritatis at!</p>
+                    <p>I'm Tejas, a passionate and dedicated full-stack web developer with a love for creating beautiful
+                        and functional websites. With a strong foundation in front-end technologies like HTML, CSS, and
+                        JavaScript, coupled with expertise in back-end development using Node.js and databases like
+                        MongoDB, I have the skills to bring ideas to life.
+
+                        I thrive on challenges and enjoy crafting seamless user experiences through responsive and
+                        accessible designs. Constantly seeking to expand my knowledge and stay up-to-date with the
+                        latest industry trends, I'm committed to delivering high-quality, scalable, and maintainable
+                        solutions.
+
+                        Let's build a better web together. Explore my portfolio and let's connect to collaborate on
+                        exciting projects</p>
 
                     <div class="contact_links">
 
-                        <a  target="_blank" href="https://drive.google.com/file/d/1cbcKGj12SFuqfBh73nxWjMmXISKkAN27/view?usp=sharing"
+                        <a target="_blank"
+                            href="https://drive.google.com/file/d/1cbcKGj12SFuqfBh73nxWjMmXISKkAN27/view?usp=sharing"
                             class="download_btn contact_btn"><span>Download CV</span> <img class="cv_icon_color"
                                 src="assets/cv_color.png" alt=""><img class="cv_icon_white" src="assets/cv_white.png"
                                 alt=""></a>
@@ -118,245 +125,527 @@
 
         <div class="about_links">
 
-            <p class="about_btns active_btn" onclick="opentab('skills')">SKills</p>
-            <p class="about_btns" onclick="opentab('Experience')">Experience</p>
-            <p class="about_btns" onclick="opentab('education')">Education</p>
-            
+            <p class="tab_links active_link" id="skill_btn" onclick="openskill()">SKills</p>
+            <p class="tab_links" id="edu_btn" onclick="openedu()">Education</p>
+            <p class="tab_links" id="exp_btn" onclick="openexp()">Experience</p>
+            <p class="tab_links" id="tool_btn" onclick="opentool()">Tools</p>
+
         </div>
 
-        <div class="about_contents active_tab" id="skills" >
-            <div class="container2">
-                <div class="card" >
+        <div class="tab_content active_tab" id="skill_cont">
+            <div class="container2 " id="skills">
+                <div class="card">
                     <div class="img-box">
-                        <img
-                            src="assets/Mern.png">
-    
+                        <img src="assets/mongo.png">
+
+                    </div>
+                    <div class="content">
+                        <h2>Mongo-db</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card" style="--clr: #FF3E7F">
+                    <div class="img-box">
+                        <img src="assets/express.png">
+                    </div>
+                    <div class="content">
+                        <h2>Express Js</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div class="img-box">
+                        <img src="assets/react.png">
+                    </div>
+                    <div class="content">
+                        <h2>React Js</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div class="img-box">
+                        <img src="assets/node.png">
+                    </div>
+                    <div class="content">
+                        <h2>Node Js</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card" style="--clr: #03A9F4">
+                    <div style="display: flex; justify-content: center; align-items: center;  position: absolute; "
+                        class="img-box">
+                        <img src="assets/html.png">
+                    </div>
+                    <div class="content">
+                        <h2>Html</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div style="display: flex; justify-content: center; align-items: center; " class="img-box">
+                        <img src="assets/css.png">
+                    </div>
+                    <div class="content">
+                        <h2>Css</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div style="display: flex; justify-content: center; align-items: center; " class="img-box">
+                        <img src="assets/python.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Python</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div style="display: flex; justify-content: center; align-items: center; " class="img-box">
+                        <img src="assets/django.png">
+                    </div>
+                    <div class="content">
+                        <h2>Django</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div style="display: flex; justify-content: center; align-items: center; " class="img-box">
+                        <img src="assets/mysql.png">
+                    </div>
+                    <div class="content">
+                        <h2>Mysql</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div style="display: flex; justify-content: center; align-items: center; " class="img-box">
+                        <img src="assets/git.png">
+                    </div>
+                    <div class="content">
+                        <h2>Git</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tab_content" id="edu_cont">
+            <div class="container2 " id="education" style="padding:50px 50px;">
+                <div class="card">
+                    <div class="img-box">
+                        <img src="assets/sdmp.jpeg">
+
+                    </div>
+                    <div class="content">
+                        <h2> Diploma</h2>
+                        <p>
+                            Shree Datta Meghe Polytechnic. Nagpur,<br>(2019)
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card" style="--clr: #FF3E7F">
+                    <div class="img-box">
+                        <img src="assets/sbjain.jpeg">
+                    </div>
+                    <!-- style="height: 37px;" -->
+                    <div class="content">
+                        <h2>Bachelors</h2>
+                        <p>
+                            S.B Jain Institute of Technolgy, Management and Research, Nagpur<br>(2022)
+
+
+                            </li>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div class="img-box">
+                        <img src="assets/mern.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2>Python Development</h2>
+                        <p>
+                            SSIT PVT. LTD. Nagpur,<br>(2023)
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card" style="--clr: #03A9F4">
+                    <div class="img-box">
+                        <img src="assets/mern.jpeg">
                     </div>
                     <div class="content">
                         <h2>MERN</h2>
                         <p>
-                            MONGO-DB | EXPRESS JS | REACT JS | NODE JS.
+                            Binary Code Technologies, Nagpur,<br>( 2023)
                         </p>
-                        
+
                     </div>
                 </div>
-                <div class="card" style="--clr: #FF3E7F">
-                    <div class="img-box">
-                        <img
-                            src="assets/web.jpeg">
-                    </div>
-                    <div class="content">
-                        <h2>WEB</h2>
-                        <p>
-                           HTML <br>CSS <br> JS
-                        </li>
-                        </p>
-                        
-                    </div>
-                </div>
-                <div class="card" style="--clr: #03A9F4">
-                    <div class="img-box">
-                        <img
-                            src="assets/uiux.png">
-                    </div>
-                    <div class="content">
-                        <h2>UI-UX</h2>
-                        <p style="font-size: 25px;">
-                            Designing Web/app <br>interfaces
-                        </p>
-                        
-                    </div>
-                </div>
-                <div class="card" style="--clr: #03A9F4">
-                    <div class="img-box">
-                        <img 
-                            src="assets/python.jpeg">
-                    </div>
-                    <div class="content">
-                        <h2>Python</h2>
-                        <p style="font-size: 25px;" >
-                           Programming Languange
-                        </p>
-                        
-                    </div>
-                </div>
-                <div class="card" style="--clr: #03A9F4">
-                    <div style="background-size: cover;" class="img-box">
-                        <img  
-                            src="assets/django.jpeg">
-                    </div>
-                    <div class="content">
-                        <h2>Django</h2>
-                        <p style="font-size: 25px;" >
-                           Python <br> Backend Framework
-                        </p>
-                        
-                    </div>
-                </div>
+
+
             </div>
+
 
         </div>
 
-        <div class="about_contents" id="experience">
-            <div class="container2">
-                <div class="card" >
+        <div class="tab_content" id="exp_cont">
+            <div class="container2" id="experience">
+                <div class="card">
                     <div class="img-box">
-                        <img
-                            src="assets/Mern.png">
-    
+                        <img src="assets/web.png">
+
                     </div>
                     <div class="content">
-                        <h2> Experience1</h2>
+                        <h2> Full Stack Developement</h2>
                         <p>
-                            MONGO-DB | EXPRESS JS | REACT JS | NODE JS.
+                            SSIT PVT. LTD. Nagpur,<br>( 6 Months)
                         </p>
-                        
+
                     </div>
                 </div>
                 <div class="card" style="--clr: #FF3E7F">
                     <div class="img-box">
-                        <img
-                            src="assets/web.jpeg">
+                        <img src="assets/python.jpeg">
                     </div>
                     <div class="content">
-                        <h2>Experience2</h2>
+                        <h2>Python <br>Developement</h2>
                         <p>
-                           HTML <br>CSS <br> JS
-                        </li>
+                            SSIT PVT. LTD. Nagpur,<br>( 3 months)
+
+
+                            </li>
                         </p>
-                        
+
                     </div>
                 </div>
                 <div class="card" style="--clr: #03A9F4">
                     <div class="img-box">
-                        <img
-                            src="assets/uiux.png">
+                        <img src="assets/mern.jpeg">
                     </div>
                     <div class="content">
-                        <h2>Experience3</h2>
-                        <p style="font-size: 25px;">
-                            Designing Web/app <br>interfaces
+                        <h2>MERNSTACK <br>Development</h2>
+                        <p>
+                            Binary Code Technologies, Nagpur,<br>( 12 Months)
                         </p>
-                        
+
                     </div>
                 </div>
-                <div class="card" style="--clr: #03A9F4">
-                    <div class="img-box">
-                        <img 
-                            src="assets/python.jpeg">
-                    </div>
-                    <div class="content">
-                        <h2>Experience4</h2>
-                        <p style="font-size: 25px;" >
-                           Programming Languange
-                        </p>
-                        
-                    </div>
-                </div>
-                <div class="card" style="--clr: #03A9F4">
-                    <div style="background-size: cover;" class="img-box">
-                        <img  
-                            src="assets/django.jpeg">
-                    </div>
-                    <div class="content">
-                        <h2>Experience5</h2>
-                        <p style="font-size: 25px;" >
-                           Python <br> Backend Framework
-                        </p>
-                        
-                    </div>
-                </div>
+
+
             </div>
+
 
         </div>
-
-        <div class="about_contents"  id="education">
-            <div class="container2">
-                <div class="card" >
+        <div class="tab_content" id="tool_cont">
+            <div class="container2" id="tools" style="padding: 0px 50px;">
+                <div class="card">
                     <div class="img-box">
-                        <img
-                            src="assets/Mern.png">
-    
+                        <img src="assets/vscode.png">
+
                     </div>
                     <div class="content">
-                        <h2>Diploma</h2>
-                        <p>
-                            Shri Datta Meghe Polytechninc,<br>Nagpur.
-                        </p>
-                        
+                        <h2>VS Code</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="card" style="--clr: #FF3E7F">
                     <div class="img-box">
-                        <img
-                            src="assets/web.jpeg">
+                        <img src="assets/pycharm.png">
                     </div>
                     <div class="content">
-                        <h2>Bacholers</h2>
-                        <p>
-                           S.B Jain Institute of Technolgy Management and Research
-                        </li>
-                        </p>
-                        
+                        <h2>Pycharm</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="card" style="--clr: #03A9F4">
                     <div class="img-box">
-                        <img
-                            src="assets/uiux.png">
+                        <img src="assets/sublime.png">
                     </div>
                     <div class="content">
-                        <h2>Python Developement</h2>
-                        <p style="font-size: 25px;">
-                            SSIT pvt. ltd, Nagpur
-                        </p>
-                        
-                    </div>
-                </div>
-                <div class="card" style="--clr: #03A9F4">
-                    <div style="background-size: cover;" class="img-box">
-                        <img  
-                            src="assets/django.jpeg">
-                    </div>
-                    <div class="content">
-                        <h2>Web Developement</h2>
-                        <p style="font-size: 25px;" >
-                           SSIT pvt. ltd, Nagpur.
-                        </p>
-                        
+                        <h2>Sublime</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="card" style="--clr: #03A9F4">
                     <div class="img-box">
-                        <img 
-                            src="assets/python.jpeg">
+                        <img src="assets/postman.png">
                     </div>
                     <div class="content">
-                        <h2>MERN
-                        </h2>
-                        <p style="font-size: 25px;" >
-                           Binar Code Technologies, Nagpur.
-                        </p>
-                        
+                        <h2>Postman</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                
+
+                <div class="card" style="--clr: #03A9F4">
+                    <div class="img-box">
+                        <img src="assets/github.png">
+                    </div>
+                    <div class="content">
+                        <h2>Github</h2>
+                        <div class="score">
+                            <div class="score_cont">
+                                <div id="mongo_score">
+
+                                </div>
+
+                            </div>
+                            <div class="score_num">
+                                80%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
             </div>
+
 
         </div>
 
 
 
 
-        
+
     </div>
 
+    <!-- ---------Services section starts here---------------- -->
+
+    <div class="services_cont">
+
+        <h1 class="service_heading">My Services</h1>
+
+        <div class="wrapper">
+            <div class="service_card">
+                <div class="poster">
+                    <img src="assets/webdesingning.png" alt="">
+                    <h1>WEB  <br>DESIGNING</h1>
+                    
+                </div>
+                <div class="details">
+                    <h1>Web <br> Designing</h1>
+                   
+                    
+                    
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, iusto eveniet? Ipsum, iusto tempore at laudantium magni assumenda eveniet quo!
+                    </p>
+
+                </div>
+            </div>
+            <div class="service_card">
+                <div class="poster">
+                    <img src="assets/webd.png" alt="">
+                    <h1 style="font-size: 2rem;">WEB  <br>DEVELOPMENT</h1>
+                </div>
+                <div class="details">
+                    <h1 >Web <br> Development</h1style=>
+                    
+                    
+                    
+                    <p class="desc" style="font-weight: lighter;">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, iusto eveniet? Ipsum, iusto tempore at laudantium magni assumenda eveniet quo!
+                    </p>
+
+                </div>
+            </div>
+            <div class="service_card">
+                <div class="poster">
+                    <img src="assets/uiux_icon.png" alt="">
+                    <h1>APP <br>DESIGNING</h1>
+                </div>
+                <div class="details">
+                    <h1>App  <br>Designing</h1>
+                    
+                    
+                    
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, iusto eveniet? Ipsum, iusto tempore at laudantium magni assumenda eveniet quo!
+                    </p>
+
+                </div>
+            </div>
+            <div class="service_card">
+                <div class="poster">
+                    <img src="assets/uiux_icon.png" alt="">
+                    <h1>UI-UX <br>DESIGNING</h1>
+                </div>
+                <div class="details">
+                    <h1>UI-UX  <br>Designing</h1>
+                    
+                    
+                    
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, iusto eveniet? Ipsum, iusto tempore at laudantium magni assumenda eveniet quo!
+                    </p>
+
+                </div>
+            </div>
+        </div>
 
 
+    </div>
 
-
-
-
+    <script src="script.js"></script>
 
 </body>
 

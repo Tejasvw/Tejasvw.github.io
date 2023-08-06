@@ -20,45 +20,72 @@ const text= document.querySelector('.sec_text');
             textload();
             setInterval(textload,20000);
 
+            var skill_btn = document.getElementById("skill_btn")
+            var edu_btn = document.getElementById("edu_btn")
+            var exp_btn = document.getElementById("exp_btn")
+            var tool_btn = document.getElementById("tool_btn")
+    
+            var skill_cont = document.getElementById("skill_cont")
+            var edu_cont = document.getElementById("edu_cont")
+            var exp_cont = document.getElementById("exp_cont")
+            var tool_cont = document.getElementById("tool_cont")
+    
+            function openskill() {
+    
+                skill_btn.classList.add("active_link")
+                edu_btn.classList.remove("active_link")
+                exp_btn.classList.remove("active_link")
+                tool_btn.classList.remove("active_link")
+    
+                skill_cont.classList.add("active_tab")
+                edu_cont.classList.remove("active_tab")
+                exp_cont.classList.remove("active_tab")
+                tool_cont.classList.remove("active_tab")
+    
+            }
+            function openedu() {
+    
+                edu_btn.classList.add("active_link")
+                skill_btn.classList.remove("active_link")
+                exp_btn.classList.remove("active_link")
+                tool_btn.classList.remove("active_link")
+    
+                skill_cont.classList.remove("active_tab")
+                edu_cont.classList.add("active_tab")
+                exp_cont.classList.remove("active_tab")
+                tool_cont.classList.remove("active_tab")
+    
+            }
+            function openexp() {
+    
+                exp_btn.classList.add("active_link")
+                skill_btn.classList.remove("active_link")
+                edu_btn.classList.remove("active_link")
+                tool_btn.classList.remove("active_link")
+    
+                skill_cont.classList.remove("active_tab")
+                edu_cont.classList.remove("active_tab")
+                exp_cont.classList.add("active_tab")
+                tool_cont.classList.remove("active_tab")
+    
+            }
+            function opentool() {
+    
+                tool_btn.classList.add("active_link")
+                exp_btn.classList.remove("active_link")
+                skill_btn.classList.remove("active_link")
+                edu_btn.classList.remove("active_link")
+    
+                skill_cont.classList.remove("active_tab")
+                edu_cont.classList.remove("active_tab")
+                exp_cont.classList.remove("active_tab")
+                tool_cont.classList.add("active_tab")
+    
+            }
 
-var aboutlinks=document.getElementsByClassName('about_btns')
-var aboutcontent=document.getElementsByClassName('about_contents')
-
-function opentab(tabname){
-    for(aboutlinks of aboutlinks){
-        aboutlinks.classList.remove("active_btn");
-    }
-    for(aboutcontent of aboutcontent){
-        aboutcontent.classList.remove("active_tab");
-    }
-    event.currentTarget.classList.add("active_btn")
-    document.getElementById(tabname).classList.add("active_tab");
-}
 
 
-// ripple button js
 
-const button = document.querySelector(".ripple-btn");
 
-button.addEventListener("click", drawRipple);
-
-function drawRipple(event) {
-  const x = event.clientX - event.target.offsetLeft;
-  const y = event.clientY - event.target.offsetTop;
-
-  const ripples = document.createElement("div");
-  ripples.classList.add('ripple_effect');
-
-  const container = document.getElementsByClassName('download_btn');
-  container.appendChild(ripples);
-
-  ripples.style.left = x + "px";
-  ripples.style.top = y + "px";
-
-  this.appendChild(ripples);
-
-  setTimeout(() => {
-    ripples.remove();
-  }, 1000);
-}
+ 
 
